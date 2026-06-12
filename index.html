@@ -11,12 +11,12 @@
         h2 { color: #222; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         .disclosure { background: #fff9e6; padding: 20px; border-radius: 8px; border-left: 6px solid #f4a261; margin: 30px 0; font-size: 0.95em; }
         .product { margin: 40px 0; padding: 20px; background: #f9f9f9; border-radius: 8px; }
-        .product img { max-width: 100%; height: auto; border-radius: 8px; margin: 15px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .product img { max-width: 100%; height: auto; border-radius: 8px; margin: 15px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: block; }
         button, .btn { background: #007bff; color: white; padding: 14px 28px; font-size: 1.1em; border: none; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; margin: 10px 0; }
         button:hover, .btn:hover { background: #0056b3; }
         .paid { color: #666; font-size: 0.9em; margin-top: 5px; }
         ul { line-height: 1.8; }
-        .hero { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .hero { width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); display: block; }
     </style>
 </head>
 <body>
@@ -26,8 +26,8 @@
         <p>I’m a welding student, Marine vet, and I’m putting together real gear for beginners who want to show up prepared without wasting money.</p>
     </header>
 
-    <!-- Hero Image -->
-    <img src="images/Oi7A5.jpg" alt="Welder in action wearing auto-darkening helmet and gloves in a professional shop" class="hero">
+    <!-- Hero Image - Optimized with lazy loading and dimensions -->
+    <img src="images/Oi7A5.jpg" alt="Welder in action wearing auto-darkening helmet and gloves in a professional shop" class="hero" width="1176" height="784" loading="lazy">
 
     <div class="disclosure">
         <strong>Disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page are paid links, which means I may earn a commission if you buy through them, at no extra cost to you.
@@ -42,7 +42,7 @@
 
     <section class="product">
         <h2>1. Auto-Darkening Welding Helmet</h2>
-        <img src="images/vx07D.jpg" alt="Modern auto-darkening welding helmet with blue light blocking technology">
+        <img src="images/vx07D.jpg" alt="Modern auto-darkening welding helmet with blue light blocking technology" width="800" height="600" loading="lazy">
         <p>A welding helmet is one of the first things I would get. An auto-darkening hood makes it easier to see where you are starting, especially when you are still learning how to strike an arc and hold steady.</p>
         <p>For a beginner, look for adjustable shade, grind mode, comfortable headgear, and clear lens.</p>
         <p><strong>Good for:</strong> welding school, stick, MIG, flux-core, garage work.</p>
@@ -53,7 +53,7 @@
 
     <section class="product">
         <h2>2. Welding Gloves</h2>
-        <img src="images/ShPFJ.jpg" alt="Heavy duty red and black leather welding gloves">
+        <img src="images/ShPFJ.jpg" alt="Heavy duty red and black leather welding gloves" width="800" height="600" loading="lazy">
         <p>Do not try to weld with regular work gloves. Welding gloves are made for heat, sparks, and rough metal.</p>
         <p><strong>Good for:</strong> hand protection, hot metal, sparks.</p>
         <a href="https://www.amazon.com/s?k=welding+gloves&tag=Shelfdrop03-20&subId=gloves" class="btn" target="_blank">View Welding Gloves on Amazon</a>
@@ -62,7 +62,7 @@
 
     <section class="product">
         <h2>3. Welding Jacket or Sleeves</h2>
-        <img src="images/AiYxj.jpg" alt="Brown leather welding jacket with hood for protection">
+        <img src="images/AiYxj.jpg" alt="Brown leather welding jacket with hood for protection" width="800" height="600" loading="lazy">
         <p>Sparks will tear up regular shirts fast. Sleeves or jacket for protection.</p>
         <a href="https://www.amazon.com/s?k=welding+jacket&tag=Shelfdrop03-20&subId=jacket" class="btn" target="_blank">View Welding Jacket or Sleeves on Amazon</a>
         <p class="paid">Paid link / Commissions earned</p>
@@ -70,7 +70,7 @@
 
     <section class="product">
         <h2>4. Safety Glasses</h2>
-        <img src="images/ZpzJk.jpg" alt="Clear wrap-around welding safety glasses with side protection">
+        <img src="images/ZpzJk.jpg" alt="Clear wrap-around welding safety glasses with side protection" width="800" height="600" loading="lazy">
         <p>Essential under the hood for grinding, chipping, etc.</p>
         <a href="https://www.amazon.com/s?k=welding+safety+glasses&tag=Shelfdrop03-20&subId=safetyglasses" class="btn" target="_blank">View Safety Glasses on Amazon</a>
         <p class="paid">Paid link / Commissions earned</p>
@@ -78,14 +78,14 @@
 
     <section class="product">
         <h2>5. Welding Cap</h2>
-        <p>Protects head, hair, and makes hood more comfortable. (Add your image here later)</p>
+        <p>Protects head, hair, and makes hood more comfortable. (Add your image later)</p>
         <a href="https://www.amazon.com/s?k=welding+cap&tag=Shelfdrop03-20&subId=cap" class="btn" target="_blank">View Welding Caps on Amazon</a>
         <p class="paid">Paid link / Commissions earned</p>
     </section>
 
     <section class="product">
         <h2>6. Chipping Hammer and Wire Brush</h2>
-        <img src="images/IARjq.jpg" alt="Welding chipping hammer and wire brush set for slag removal">
+        <img src="images/IARjq.jpg" alt="Welding chipping hammer and wire brush set for slag removal" width="800" height="600" loading="lazy">
         <p>Must-have for stick welding slag removal.</p>
         <a href="https://www.amazon.com/s?k=chipping+hammer+wire+brush&tag=Shelfdrop03-20&subId=chippinghammer" class="btn" target="_blank">View Chipping Hammer and Wire Brush on Amazon</a>
         <p class="paid">Paid link / Commissions earned</p>
